@@ -1,0 +1,1321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Jaffna Spice</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/hero.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-xxl position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+                    <h1 class="text-primary m-0"><i class="fa fa-utensils me-3"></i>Jaffna Spice</h1>
+                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0 pe-4">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="menu.html" class="nav-item nav-link active">Menu</a>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        <a href="service.html" class="nav-item nav-link">Service</a>
+                    </div>
+                    <a href="booking.html" class="btn btn-primary py-2 px-4">Book A Table</a>
+                </div>
+            </nav>
+
+            <div class="container-xxl py-5 bg-dark hero-header mb-5">
+                <div class="container text-center my-5 pt-5 pb-4">
+                    <h1 class="display-3 text-white mb-3 animated slideInDown">Food Menu</h1>
+                    <!-- <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center text-uppercase">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                            <li class="breadcrumb-item text-white active" aria-current="page">Menu</li>
+                        </ol>
+                    </nav> -->
+                </div>
+            </div>
+        </div>
+        <!-- Navbar & Hero End -->
+
+
+        <!-- Menu Start -->
+        <div class="container-xxl py-5">
+            <div class="container menu-container">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="section-title ff-secondary text-center text-primary fw-normal">Food Menu</h5>
+                    <h1 class="mb-3">Most Popular Items</h1>
+                </div>
+                <div class="tab-class text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <ul class="nav nav-pills d-inline-flex justify-content-center border-bottom mb-5 tabs">
+                        <li class="nav-item">
+                            <a class="d-flex align-items-center text-start mx-3 ms-0 pb-3 tab active" onclick="showTab('tab-1')" data-bs-toggle="pill" href="#tab-1">
+                                <div class="pt-3">
+                                    <h6 class="mt-n1 mb-0">Starters</h6>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="d-flex align-items-center text-start mx-3 pb-3 tab" data-bs-toggle="pill" onclick="showTab('tab-2')" href="#tab-2">
+                                <div class="pt-3">
+                                    <h6 class="mt-n1 mb-0">Kothu items</h6>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="d-flex align-items-center text-start mx-3 pb-3 tab" data-bs-toggle="pill" onclick="showTab('tab-3')" href="#tab-3">
+                                <div class="pt-3">
+                                    <h6 class="mt-n1 mb-0">DOSA</h6>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="d-flex align-items-center text-start mx-3 pb-3 tab" data-bs-toggle="pill" onclick="showTab('tab-4')" href="#tab-4">
+                                <div class="pt-3">
+                                    <h6 class="mt-n1 mb-0">Curry</h6>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="d-flex align-items-center text-start mx-3 pb-3 tab" data-bs-toggle="pill" onclick="showTab('tab-5')" href="#tab-5">
+                                <div class="pt-3">
+                                    <h6 class="mt-n1 mb-0">Noodles</h6>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="d-flex align-items-center text-start mx-3 pb-3 tab" data-bs-toggle="pill" onclick="showTab('tab-6')" href="#tab-6">
+                                <div class="pt-3">
+                                    <h6 class="mt-n1 mb-0">Breads & Naan</h6>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="d-flex align-items-center text-start mx-3 pb-3 tab" data-bs-toggle="pill" onclick="showTab('tab-7')" href="#tab-7">
+                                <div class="pt-3">
+                                    <h6 class="mt-n1 mb-0">Rice</h6>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        
+                        <li class="nav-item">
+                            <a class="d-flex align-items-center text-start mx-3 pb-3 tab" data-bs-toggle="pill" onclick="showTab('tab-8')" href="#tab-8">
+                                <div class="pt-3">
+                                    <h6 class="mt-n1 mb-0">Sides</h6>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="d-flex align-items-center text-start mx-3 me-0 pb-3 tab" data-bs-toggle="pill" onclick="showTab('tab-9')" href="#tab-9">
+                                <div class="pt-3">
+                                    <h6 class="mt-n1 mb-0">Drinks</h6>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="d-flex align-items-center text-start mx-3 pb-3 tab" data-bs-toggle="pill" onclick="showTab('tab-10')" href="#tab-10">
+                                <div class="pt-3">
+                                    <h6 class="mt-n1 mb-0">Jaffna Special</h6>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="d-flex align-items-center text-start mx-3 pb-3 tab" data-bs-toggle="pill" onclick="showTab('tab-11')" href="#tab-11">
+                                <div class="pt-3">
+                                    <h6 class="mt-n1 mb-0">Everyday Special</h6>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="d-flex align-items-center text-start mx-3 pb-3 tab" data-bs-toggle="pill" onclick="showTab('tab-12')" href="#tab-12">
+                                <div class="pt-3">
+                                    <h6 class="mt-n1 mb-0">Deserts</h6>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    
+                        <div id="tab-1" class="tab-content fade show p-0 active">
+                            <div class="item-list"> 
+                                <ol> 
+                                    <li class="item"> 
+                                        <span class="item-name">1. Rasam & Pepper</span> 
+                                        <span class="item-rate">£3.50</span> 
+                                    </li>
+                                    <li class="item"> 
+                                        <span class="item-name">2. Crab Soup</span> 
+                                        <span class="item-rate">£7.00</span> 
+                                    </li>
+                                    <li class="item"> 
+                                        <span class="item-name">3. Fish Cutlet (2)</span> 
+                                        <span class="item-rate">£2.00</span> 
+                                    </li>
+                                    <li class="item"> 
+                                        <span class="item-name">4. Egg And Fish Roll</span> 
+                                        <span class="item-rate">£1.75</span> 
+                                    </li>
+                                    <li class="item"> 
+                                        <span class="item-name">5. Anchovy (Nethili) Fry</span> 
+                                        <span class="item-rate">£7.50</span> 
+                                    </li>
+                                    <li class="item"> 
+                                        <span class="item-name">6. Chicken 65 (Spiced Chicken Fried)</span> 
+                                        <span class="item-rate">£7.00</span> 
+                                    </li>
+                                    <li class="item"> 
+                                        <span class="item-name">7. Mutton Roll</span> 
+                                        <span class="item-rate">£1.25</span> 
+                                    </li>                                                                                                     
+                                    <li class="item"> 
+                                        <span class="item-name">8. Mutton Fry</span> 
+                                        <span class="item-rate">£9.00</span> 
+                                    </li>
+                                    <li class="item"> 
+                                        <span class="item-name">9. Mutton Chukka (Dry Mutton Curry)</span> 
+                                        <span class="item-rate">£10.00</span> 
+                                    </li>
+                                    <li class="item"> 
+                                        <span class="item-name">10. Prawn Fry</span> 
+                                        <span class="item-rate">£10.00</span> 
+                                    </li>
+                                    <li class="item"> 
+                                        <span class="item-name">11. Squid Fry</span> 
+                                        <span class="item-rate">£10.00</span> 
+                                    </li>
+                                    <li class="item"> 
+                                        <span class="item-name">12. Vegetable Samosas(2)</span> 
+                                        <span class="item-rate">£1.75</span> 
+                                    </li>
+                                    <li class="item"> 
+                                        <span class="item-name">13. Vegetarian Roll</span> 
+                                        <span class="item-rate">£1.00</span> 
+                                    </li>                                
+                                    <li class="item"> 
+                                        <span class="item-name">14. Gobi 65 (Spiced Cauliflower Fry)</span> 
+                                        <span class="item-rate">£6.00</span> 
+                                    </li>
+                                    <li class="item"> 
+                                        <span>
+                                            <div class="item-name">15. Gobi Manchurian</div> 
+                                            <small class="fst-italic">(Fried Cauliflower Marinated In Spicy Sauce and Mixed Veg)</small>
+                                        </span>
+                                        <span class="item-rate">£7.00</span> 
+                                    </li>
+                                    <li class="item"> 
+                                        <span>
+                                            <div class="item-name">16. Sambhar Vadai(2)</div>
+                                            <small class="fst-italic">(Marinated With Indian Spiced Vegetable Stew)</small>
+                                        </span> 
+                                        <span class="item-rate">£5.00</span> 
+                                    </li>
+                                    <li class="item"> 
+                                        <span>
+                                            <div class="item-name">17. Masala Vadai(2)</div>
+                                            <small class="fst-italic">(A Tasty and Spicy Doughnut Made With Channa Dahi and Spices)</small>
+                                        </span> 
+                                        <span class="item-rate">£1.75</span> 
+                                    </li>
+                                    <li class="item"> 
+                                        <span class="item-name">18. Methu Vadai(2)(Savoury donut)</span> 
+                                        <span class="item-rate">£1.75</span> 
+                                    </li>
+                                    <li class="item"> 
+                                        <span class="item-name">19. Paneer 65</span> 
+                                        <span class="item-rate">£7.00</span> 
+                                    </li>
+                                    <li class="item"> 
+                                        <span class="item-name">20. Devilled Cassava</span> 
+                                        <span class="item-rate">£7.00</span> 
+                                    </li>
+                                </ol>
+                                <ol> 
+                                    <li class="item"> 
+                                        <span class="item-name">21. Devilled Chickpeas</span> 
+                                        <span class="item-rate">£7.00</span> 
+                                    </li>
+                                    <li class="item"> 
+                                        <span class="item-name">22. Devilled Chilli Paneer</span> 
+                                        <span class="item-rate">£7.00</span> 
+                                    </li>
+                                    <li class="item"> 
+                                        <span class="item-name">23. Devilled Fish</span> 
+                                        <span class="item-rate">£10.00</span> 
+                                    </li>
+                                    <li class="item"> 
+                                        <span class="item-name">24. Devilled Squid</span> 
+                                        <span class="item-rate">£10.00</span> 
+                                    </li>
+                                    <li class="item"> 
+                                        <span class="item-name">25. Devilled King Prawn</span> 
+                                        <span class="item-rate">£12.00</span> 
+                                    </li>
+                                    <li class="item"> 
+                                        <span class="item-name">26. Devilled Seafood</span> 
+                                        <span class="item-rate">£11.00</span> 
+                                    </li>
+                                    <li class="item"> 
+                                        <span class="item-name">27. Devilled Crab</span> 
+                                        <span class="item-rate">£10.00</span> 
+                                    </li>
+                                    <li class="item"> 
+                                        <span class="item-name">28. Devilled Chicken</span> 
+                                        <span class="item-rate">£7.00</span> 
+                                    </li>                                                                                                     
+                                    <li class="item"> 
+                                        <span class="item-name">29. Devilled Chicken Liver</span> 
+                                        <span class="item-rate">£7.00</span> 
+                                    </li>                                
+                                    <li class="item"> 
+                                        <span class="item-name">30. Devilled Mutton</span> 
+                                        <span class="item-rate">£8.00</span> 
+                                    </li>
+                                    <li class="item"> 
+                                        <span class="item-name">31. Devilled Beef</span> 
+                                        <span class="item-rate">£8.00</span> 
+                                    </li>
+                                    <li class="item"> 
+                                        <span class="item-name">32. Devilled Anchovy</span> 
+                                        <span class="item-rate">£8.00</span> 
+                                    </li>
+                                    <li class="item"> 
+                                        <span>
+                                            <div class="item-name">33. Special Devilled</div>
+                                            <small class="fst-italic">(Lamb Chicken, Squid, Prawns And Anchovy)</small>
+                                        </span> 
+                                        <span class="item-rate">£15.00</span> 
+                                    </li>
+                                    <li class="item"> 
+                                        <span class="item-name">34. Lamb Chop</span> 
+                                        <span class="item-rate">£8.00</span> 
+                                    </li>
+                                    <li class="item"> 
+                                        <span class="item-name">35. King Prawn Tandoori</span> 
+                                        <span class="item-rate">£10.00</span> 
+                                    </li>
+                                    <li class="item"> 
+                                        <span class="item-name">36. Chicken Wings</span> 
+                                        <span class="item-rate">£5.00</span> 
+                                    </li>
+                                    <li class="item"> 
+                                        <span class="item-name">37. Tandoori Chicken</span> 
+                                        <span class="item-rate">£5.00</span> 
+                                    </li>
+                                    <li class="item"> 
+                                        <span class="item-name">38. Chicken Tikka</span> 
+                                        <span class="item-rate">£5.00</span> 
+                                    </li>
+                                    <li class="item"> 
+                                        <span>
+                                            <div class="item-name">39. Mixed Grill Platter</div>
+                                            <small class="fst-italic">(Tandoori Chicken, Chicken Tikka, Lamb Chops, Chicken Wings)</small>
+                                        </span> 
+                                        <span class="item-rate">£15.00</span> 
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div id="tab-2" class="tab-content fade show p-0">
+                            <div class="item-list"> 
+                                 
+                                    <ol> 
+                                        <li class="item"> 
+                                            <span class="item-name">1. Veg Pitttu (V)</span> 
+                                            <span class="item-rate">£7.00</span> 
+                                        </li>
+                                        <li class="item"> 
+                                            <span class="item-name">2. Egg Pittu</span> 
+                                            <span class="item-rate">£7.00</span> 
+                                        </li>
+                                        <li class="item"> 
+                                            <span class="item-name">3. Nethili Pittu (Anchovy)</span> 
+                                            <span class="item-rate">£8.00</span> 
+                                        </li>
+                                        <li class="item"> 
+                                            <span class="item-name">4. Squid Pittu</span> 
+                                            <span class="item-rate">£8.00</span> 
+                                        </li>
+                                        <li class="item"> 
+                                            <span class="item-name">5. Prawn Pittu</span> 
+                                            <span class="item-rate">£8.00</span> 
+                                        </li>
+                                        <li class="item"> 
+                                            <span class="item-name">6. Mutton Pittu</span> 
+                                            <span class="item-rate">£8.00</span> 
+                                        </li>
+                                        <li class="item"> 
+                                            <span class="item-name">7. Chicken Pittu</span> 
+                                            <span class="item-rate">£8.00</span> 
+                                        </li>                                                                                                     
+                                        <li class="item"> 
+                                            <span class="item-name">8. Seafood Pittu</span> 
+                                            <span class="item-rate">£8.00</span> 
+                                        </li>
+                                        <li class="item"> 
+                                            <span>
+                                                <div class="item-name">9. Beef Pittu</div>
+                                                <small class="fst-italic">(Lamb Intestine)</small>
+                                            </span> 
+                                            <span class="item-rate">£8.00</span> 
+                                        </li>
+                                        <li class="item"> 
+                                            <span>
+                                                <div class="item-name">10. Special Pittu</div>
+                                                <small class="fst-italic">(Chicken, Mutton, Prawn, Squid...)</small>
+                                            </span> 
+                                            <span class="item-rate">£10.00</span> 
+                                        </li>
+                                        <li class="item"> 
+                                            <span class="item-name">11. Veg Kothu (V)</span> 
+                                            <span class="item-rate">£7.00</span> 
+                                        </li>
+                                        <li class="item"> 
+                                            <span class="item-name">12. Egg Kothu</span> 
+                                            <span class="item-rate">£7.00</span> 
+                                        </li>
+                                        <li class="item"> 
+                                            <span class="item-name">13. Nethili (Anchovy Kothu)</span> 
+                                            <span class="item-rate">£8.00</span> 
+                                        </li>                                
+                                        <li class="item"> 
+                                            <span class="item-name">14. Squid Kothu</span> 
+                                            <span class="item-rate">£8.00</span> 
+                                        </li>
+                                        <li class="item"> 
+                                            <span class="item-name">15. Prawn Kothu</span>
+                                            <span class="item-rate">£8.00</span> 
+                                        </li>    
+                                        
+                                    </ol>
+                            
+                                    <ol> 
+                                        <li class="item"> 
+                                            <span class="item-name">16. Mutton Kothu</span> 
+                                            <span class="item-rate">£8.00</span> 
+                                        </li>
+                                        <li class="item"> 
+                                            <span class="item-name">17. Chicken Kothu</span> 
+                                            <span class="item-rate">£8.00</span> 
+                                        </li>
+                                        <li class="item"> 
+                                            <span class="item-name">18. Seafood Kothu</span> 
+                                            <span class="item-rate">£8.00</span> 
+                                        </li>
+                                        <li class="item"> 
+                                            <span class="item-name">19. Kudal Kothu</span> 
+                                            <span class="item-rate">£8.00</span> 
+                                        </li>
+                                        <li class="item"> 
+                                            <span>
+                                                <div class="item-name">20. Beef Kothu</div>
+                                                <small class="fst-italic">(Lamb Intestine)</small>
+                                            </span> 
+                                            <span class="item-rate">£8.00</span> 
+                                        </li>
+                                        <li class="item"> 
+                                            <span>
+                                                <div class="item-name">21. Special Kothu</div>
+                                                <small class="fst-italic">(Chicken, Mutton, Prawn, Squid...)</small>
+                                            </span> 
+                                            <span class="item-rate">£10.00</span> 
+                                        </li>
+                                        <li class="item"> 
+                                            <span class="item-name">22. Veg Kothu (V)</span> 
+                                            <span class="item-rate">£7.00</span> 
+                                        </li>
+                                        <li class="item"> 
+                                            <span class="item-name">23. Egg Kothu</span> 
+                                            <span class="item-rate">£7.00</span> 
+                                        </li>
+                                        <li class="item"> 
+                                            <span class="item-name">24. Chicken Kothu</span> 
+                                            <span class="item-rate">£8.00</span> 
+                                        </li>
+                                        <li class="item"> 
+                                            <span class="item-name">25. Mutton Kothu</span> 
+                                            <span class="item-rate">£8.00</span> 
+                                        </li>
+                                        <li class="item"> 
+                                            <span class="item-name">26. Kudal Kothu</span> 
+                                            <span class="item-rate">£8.00</span> 
+                                        </li>
+                                        <li class="item"> 
+                                            <span class="item-name">27. Squid Kothu</span> 
+                                            <span class="item-rate">£8.00</span> 
+                                        </li>
+                                        <li class="item"> 
+                                            <span class="item-name">28. Prawn Kothu</span> 
+                                            <span class="item-rate">£8.00</span> 
+                                        </li>                                                                                                     
+                                        <li class="item"> 
+                                            <span class="item-name">29. Beef Kothu</span> 
+                                            <span class="item-rate">£8.00</span> 
+                                        </li>                                
+                                        <li class="item"> 
+                                            <span class="item-name">30. Sea Food Kothu</span> 
+                                            <span class="item-rate">£8.00</span> 
+                                        </li>
+                                        <li class="item"> 
+                                            <span>
+                                                <div class="item-name">31. Special Kothu</div>
+                                                <small class="fst-italic">(Chicken, Mutton, Prawn, Squid...)</small>
+                                            </span> 
+                                            <span class="item-rate">£10.00</span> 
+                                        </li>
+                                    </ol>        
+                            </div>
+                        </div>
+                        <div id="tab-3" class="tab-content fade show p-0">
+                            <div class="item-list"> 
+                                 
+                                    <ol> 
+                                        <li class="item"> 
+                                            <span class="item-name">1. Plain Dosa/Paper Roast</span> 
+                                            <span class="item-rate">£6.00</span> 
+                                        </li>
+                                        <li class="item"> 
+                                            <span class="item-name">2. Sri Lankan Dosa</span> 
+                                            <span class="item-rate">£6.00</span> 
+                                        </li>
+                                        <li class="item"> 
+                                            <span class="item-name">3. Egg Dosa</span> 
+                                            <span class="item-rate">£7.00</span> 
+                                        </li>
+                                        <li class="item"> 
+                                            <span class="item-name">4. Ghee Dosa</span> 
+                                            <span class="item-rate">£6.00</span> 
+                                        </li>
+                                        <li class="item"> 
+                                            <span>
+                                                <div class="item-name">5. Masala Dosa</div>
+                                                <small class="fst-italic">(Filled With Spiced Potato Curry)</small>
+                                            </span> 
+                                            <span class="item-rate">£7.00</span> 
+                                        </li>
+                                        <li class="item"> 
+                                            <span class="item-name">6. Paneer Dosa</span> 
+                                            <span class="item-rate">£7.00</span> 
+                                        </li>
+                                        <li class="item"> 
+                                            <span class="item-name">7. Onion Dosa</span> 
+                                            <span class="item-rate">£7.00</span> 
+                                        </li>                                                                                                     
+                                        <li class="item"> 
+                                            <span class="item-name">8. Mutton/Chicken Masala Dosa</span> 
+                                            <span class="item-rate">£8.00</span> 
+                                        </li>
+                                    </ol>
+                                    <ol>
+                                        <li class="item"> 
+                                            <span class="item-name">9. Podi Dosa</span> 
+                                            <span class="item-rate">£6.00</span> 
+                                        </li>
+                                        <li class="item"> 
+                                            <span class="item-name">10. Mysore Masala Dosa</span> 
+                                            <span class="item-rate">£7.00</span> 
+                                        </li>
+                                        <li class="item"> 
+                                            <span class="item-name">11. Coriander Podi/Chilli Dosa</span> 
+                                            <span class="item-rate">£7.00</span> 
+                                        </li>
+                                        <li class="item"> 
+                                            <span class="item-name">12. Ghee Podi Dosa</span> 
+                                            <span class="item-rate">£7.00</span> 
+                                        </li>
+                                        <li class="item"> 
+                                            <span>
+                                                <div class="item-name">13. Plain Oothappam</div>
+                                                <small class="fst-italic">(Savoury Pancake)</small>
+                                            </span> 
+                                            <span class="item-rate">£7.00</span> 
+                                        </li>                                
+                                        <li class="item"> 
+                                            <span class="item-name">14. Mixed Oothappam</span> 
+                                            <span class="item-rate">£7.50</span> 
+                                        </li>
+                                        <li class="item"> 
+                                            <span class="item-name">15. Onion Oothappam</span>
+                                            <span class="item-rate">£7.50</span> 
+                                        </li>    
+                                        <li class="item"> 
+                                            <span class="item-name">16. Poori (2pcs) & Potato Masala</span> 
+                                            <span class="item-rate">£6.00</span> 
+                                        </li>
+                                    </ol>        
+                            </div>
+                        </div>
+                        <div id="tab-4" class="tab-content fade show p-0">
+                            <div class="item-list"> 
+                                    <ol>
+                                        <li class="item"> 
+                                            <span class="item-name">1. Sambhar</span> 
+                                            <span class="item-rate">£6.00</span> 
+                                        </li>
+                                        <li class="item"> 
+                                            <span class="item-name">2. Dhaal Curry</span> 
+                                            <span class="item-rate">£7.00</span> 
+                                        </li>
+                                        <li class="item"> 
+                                            <span class="item-name">3. Potato Curry</span> 
+                                            <span class="item-rate">£7.00</span> 
+                                        </li>
+                                        <li class="item"> 
+                                            <span class="item-name">4. Fried Aubergine Curry</span> 
+                                            <span class="item-rate">£7.00</span> 
+                                        </li>
+                                        <li class="item"> 
+                                            <span class="item-name">5. Lady's Finger Curry</span> 
+                                            <span class="item-rate">£7.00</span> 
+                                        </li>
+                                        <li class="item"> 
+                                            <span class="item-name">6. Bitter Gourd Curry</span> 
+                                            <span class="item-rate">£7.00</span> 
+                                        </li>
+                                        <li class="item"> 
+                                            <span class="item-name">7. Pumpkin & Casava</span> 
+                                            <span class="item-rate">£7.00</span> 
+                                        </li>
+                                        <li class="item"> 
+                                            <span class="item-name">8. Channa Masala</span> 
+                                            <span class="item-rate">£8.00</span> 
+                                        </li>
+                                        <li class="item"> 
+                                            <span class="item-name">9. Dhaal Makhani</span> 
+                                            <span class="item-rate">£8.00</span> 
+                                        </li>
+                                        <li class="item"> 
+                                            <span class="item-name">10. Paneer Butter Masala</span> 
+                                            <span class="item-rate">£8.00</span> 
+                                        </li>                                                                                                     
+                                        <li class="item"> 
+                                            <span>
+                                                <div class="item-name">11. Palak Paneer</div>
+                                                <small class="fst-italic">(Curd Cheese And Spinach)</small>
+                                            </span> 
+                                            <span class="item-rate">£8.00</span> 
+                                        </li>                                
+                                        <li class="item"> 
+                                            <span class="item-name">12. Saag Aloo</span> 
+                                            <span class="item-rate">£7.00</span> 
+                                        </li>
+                                        <li class="item"> 
+                                            <span class="item-name">13. Mixed Veg Curry</span> 
+                                            <span class="item-rate">£7.00</span> 
+                                        </li>
+                                        <li class="item"> 
+                                            <span class="item-name">14. Egg Masala</span> 
+                                            <span class="item-rate">£7.00</span> 
+                                        </li>
+                                        <li class="item"> 
+                                            <span class="item-name">15. Chicken Curry</span> 
+                                            <span class="item-rate">£8.00</span> 
+                                        </li>
+                                        
+                                    </ol>
+                            
+                                    <ol> 
+                                        <li class="item"> 
+                                            <span class="item-name">16. Mutton Curry</span> 
+                                            <span class="item-rate">£8.00</span> 
+                                        </li>
+                                        <li class="item"> 
+                                            <span class="item-name">17. Fish Curry</span> 
+                                            <span class="item-rate">£9.00</span> 
+                                        </li>
+                                        <li class="item"> 
+                                            <span class="item-name">18. Squid Curry</span> 
+                                            <span class="item-rate">£10.00</span> 
+                                        </li>
+                                        <li class="item"> 
+                                            <span class="item-name">19. Crab Curry</span> 
+                                            <span class="item-rate">£10.00</span> 
+                                        </li>
+                                        <li class="item"> 
+                                            <span class="item-name">20.  Prawn Curry</span> 
+                                            <span class="item-rate">£10.00</span> 
+                                        </li>
+                                        <li class="item"> 
+                                            <span class="item-name">21. Rabbit Curry</span> 
+                                            <span class="item-rate">£10.00</span> 
+                                        </li>
+                                        <li class="item"> 
+                                            <span class="item-name">22. Rooster (Naatu Kozhi)</span> 
+                                            <span class="item-rate">£8.00</span> 
+                                        </li>
+                                        <li class="item"> 
+                                            <span class="item-name">23. Jaffna Style Mutton Curry</span> 
+                                            <span class="item-rate">£10.00</span> 
+                                        </li>
+                                        <li class="item"> 
+                                            <span class="item-name">24. Beef Curry</span> 
+                                            <span class="item-rate">£8.00</span> 
+                                        </li>
+                                        <li class="item"> 
+                                            <span class="item-name">25. Kudal Curry</span> 
+                                            <span class="item-rate">£8.00</span> 
+                                        </li>
+                                        <li class="item"> 
+                                            <span class="item-name">26. Chicken Saag</span> 
+                                            <span class="item-rate">£9.00</span> 
+                                        </li>
+                                        <li class="item"> 
+                                            <span class="item-name">27. Chicken Korma</span> 
+                                            <span class="item-rate">£9.00</span> 
+                                        </li>
+                                        <li class="item"> 
+                                            <span class="item-name">28. Lamb Korma</span> 
+                                            <span class="item-rate">£9.00</span> 
+                                        </li>
+                                        <li class="item"> 
+                                            <span class="item-name">29. Jalfrezi Lamb</span> 
+                                            <span class="item-rate">£9.00</span> 
+                                        </li>
+                                        <li class="item"> 
+                                            <span class="item-name">30. Jalfrezi Chicken</span> 
+                                            <span class="item-rate">£9.00</span> 
+                                        </li>
+                                        <li class="item"> 
+                                            <span class="item-name">31. Butter Chicken</span> 
+                                            <span class="item-rate">£9.00</span> 
+                                        </li>
+                                    </ol>        
+                            </div>
+                        </div>
+                        <div id="tab-5" class="tab-content" fade show p-0>
+                            <div class="item-list">
+                            <ol>
+                                <li class="item"> 
+                                    <span class="item-name">1. Egg Noodles</span> 
+                                    <span class="item-rate">£7.00</span> 
+                                </li>
+                                <li class="item"> 
+                                    <span class="item-name">2. Paneer Noodles (V)</span> 
+                                    <span class="item-rate">£7.00</span> 
+                                </li>
+                                <li class="item"> 
+                                    <span class="item-name">3. Chicken Noodles</span> 
+                                    <span class="item-rate">£7.00</span> 
+                                </li>
+                                <li class="item"> 
+                                    <span class="item-name">4. Mutton Noodles</span> 
+                                    <span class="item-rate">£8.00</span> 
+                                </li>                                
+                            </ol>
+                            <ol>
+                                <li class="item"> 
+                                    <span class="item-name">5. Prawn Noodles</span> 
+                                    <span class="item-rate">£8.00</span> 
+                                </li>
+                                <li class="item"> 
+                                    <span class="item-name">6. Seafood Noodles</span> 
+                                    <span class="item-rate">£8.00</span> 
+                                </li>
+                                <li class="item"> 
+                                    <span class="item-name">7. Veg Noodles (V)</span> 
+                                    <span class="item-rate">£6.00</span> 
+                                </li>
+                                <li class="item"> 
+                                    <span>
+                                        <div class="item-name">8. Special Noodles</div>
+                                        <small class="fst-italic">(Meat & Sea Food Mix)</small>
+                                    </span> 
+                                    <span class="item-rate">£9.00</span> 
+                                </li>
+                            </ol>
+                            </div>
+                        </div>
+                        <div id="tab-6" class="tab-content" fade show p-0>
+                            <div class="item-list">
+                            <ol>
+                                <li class="item"> 
+                                    <span class="item-name">1. Egg Parotta</span> 
+                                    <span class="item-rate">£4.00</span> 
+                                </li>
+                                <li class="item"> 
+                                    <span class="item-name">2. Colombo Veechu Roti</span> 
+                                    <span class="item-rate">£1.75</span> 
+                                </li>
+                                <li class="item"> 
+                                    <span class="item-name">3. Plain Naan</span> 
+                                    <span class="item-rate">£1.75</span> 
+                                </li>
+                                <li class="item"> 
+                                    <span class="item-name">4. Butter Naan</span> 
+                                    <span class="item-rate">£2.50</span> 
+                                </li>
+                            </ol>
+                            <ol>                                                                                                     
+                                <li class="item"> 
+                                    <span class="item-name">5. Garlic Naan</span> 
+                                    <span class="item-rate">£3.00</span> 
+                                </li>                                
+                                <li class="item"> 
+                                    <span class="item-name">6. Chapatti</span> 
+                                    <span class="item-rate">£1.50</span> 
+                                </li>
+                                <li class="item"> 
+                                    <span class="item-name">7. Kerala Parotta</span> 
+                                    <span class="item-rate">£1.75</span> 
+                                </li>
+                                <li class="item"> 
+                                    <span class="item-name">8. Peshwari Naan</span> 
+                                    <span class="item-rate">£3.50</span> 
+                                </li>
+                            </ol>
+                            </div>
+                        </div>
+                        <div id="tab-7" class="tab-content fade show p-0">            
+                            <div class="item-list"> 
+                                <ol> 
+                                    <li class="item"> 
+                                        <span class="item-name">1. Vegetable Biryani (V)</span> 
+                                        <span class="item-rate">£7.00</span> 
+                                    </li>
+                                    <li class="item"> 
+                                        <span class="item-name">2. Paneer Biryani (V)</span> 
+                                        <span class="item-rate">£7.00</span> 
+                                    </li>
+                                    <li class="item"> 
+                                        <span class="item-name">3. Chicken Biryani</span> 
+                                        <span class="item-rate">£7.00</span> 
+                                    </li>
+                                    <li class="item"> 
+                                        <span class="item-name">4. Mutton Biryani</span> 
+                                        <span class="item-rate">£8.00</span> 
+                                    </li>
+                                    <li class="item"> 
+                                        <span class="item-name">5. Prawn Biryani</span> 
+                                        <span class="item-rate">£8.00</span> 
+                                    </li>
+                                    <li class="item"> 
+                                        <span class="item-name">6. Sea Food Biryani</span> 
+                                        <span class="item-rate">£8.00</span> 
+                                    </li>
+                                    <li class="item"> 
+                                        <span class="item-name">7. Beef Biryani</span> 
+                                        <span class="item-rate">£8.00</span> 
+                                    </li>                                                                                                     
+                                    <li class="item"> 
+                                        <span class="item-name">8. Special Biriyani</span> 
+                                        <span class="item-rate">£10.00</span> 
+                                    </li>
+                                    <li class="item"> 
+                                        <span class="item-name">9. Plain Rice</span> 
+                                        <span class="item-rate">£4.00</span> 
+                                    </li>
+                                </ol>
+                                <ol>
+                                    <li class="item"> 
+                                        <span class="item-name">10. Pilau Rice (V)</span> 
+                                        <span class="item-rate">£4.50</span> 
+                                    </li>
+                                    <li class="item"> 
+                                        <span class="item-name">11. Lemon Rice (V)</span> 
+                                        <span class="item-rate">£5.00</span> 
+                                    </li>
+                                    <li class="item"> 
+                                        <span class="item-name">12. Egg Fried Rice</span> 
+                                        <span class="item-rate">£6.00</span> 
+                                    </li>
+                                    <li class="item"> 
+                                        <span class="item-name">13. Paneer Fried Rice (V)</span> 
+                                        <span class="item-rate">£7.00</span> 
+                                    </li>                                
+                                    <li class="item"> 
+                                        <span class="item-name">14. Chicken Fried Rice</span> 
+                                        <span class="item-rate">£7.00</span> 
+                                    </li>
+                                    <li class="item"> 
+                                        <span class="item-name">15. Mutton Fried Rice</span>
+                                        <span class="item-rate">£8.00</span> 
+                                    </li>    
+                                    <li class="item"> 
+                                        <span class="item-name">16. Prawn Fried Rice</span> 
+                                        <span class="item-rate">£9.00</span> 
+                                    </li>
+                                    <li class="item"> 
+                                        <span class="item-name">17. Seafood Fried Rice</span> 
+                                        <span class="item-rate">£9.00</span> 
+                                    </li>
+                                    <li class="item"> 
+                                        <span class="item-name">18. Special Fried Rice</span> 
+                                        <span class="item-rate">£9.00</span> 
+                                    </li>
+                                </ol>   
+                            </div>
+                        </div>
+                        
+                        <div id="tab-8" class="tab-content fade show p-0">            
+                            <div class="item-list"> 
+                                <ol> 
+                                    <li class="item"> 
+                                        <span class="item-name">1. Pappodom</span> 
+                                        <span class="item-rate">£1.00</span> 
+                                    </li>
+                                    <li class="item"> 
+                                        <span class="item-name">2. Egg Omelette</span> 
+                                        <span class="item-rate">£4.00</span> 
+                                    </li>
+                                    <li class="item"> 
+                                        <span class="item-name">3. King Fried Fish</span> 
+                                        <span class="item-rate">£8.00</span> 
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div id="tab-9" class="tab-content fade show p-0">            
+                            <div class="item-list"> 
+                                <ol> 
+                                    <h3 class="text-start p-3 menu-head">Machi Oru Shotu! (Shooters)</h3>
+                                    <li class="item"> 
+                                        <span class="item-name">1. Sambuca</span> 
+                                        <span class="item-rate">£4.00</span> 
+                                    </li>
+                                    <li class="item"> 
+                                        <span class="item-name">2. Tequila</span> 
+                                        <span class="item-rate">£4.00</span> 
+                                    </li>
+                                    <li class="item"> 
+                                        <span class="item-name">3. Jagermister</span> 
+                                        <span class="item-rate">£4.00</span> 
+                                    </li>
+                                    <li class="item"> 
+                                        <span class="item-name">4. Jagerbomb</span> 
+                                        <span class="item-rate">£5.00</span> 
+                                    </li>
+                                </ol>
+                                <ol> 
+                                    <h3 class="text-start p-3 menu-head">Hot Drinks</h3>
+                                    <li class="item"> 
+                                        <span class="item-name">1. Milk Tea</span> 
+                                        <span class="item-rate">£2.50</span> 
+                                    </li>
+                                    <li class="item"> 
+                                        <span class="item-name">2. Coffee</span> 
+                                        <span class="item-rate">£2.50</span> 
+                                    </li>
+                                    <li class="item"> 
+                                        <span class="item-name">3. Masala Tea</span> 
+                                        <span class="item-rate">£2.50</span> 
+                                    </li>
+                                </ol>
+                            </div>
+                            <h3 class="text-center p-3 menu-head">COCKTAIL</h3>
+                            <div class="item-list"> 
+                                <ol> 
+                                    <li class="item"> 
+                                        <span>
+                                            <div class="item-name">1. MOJITO</div>
+                                            <small class="fst-italic">(Fresh Mint, White Rum, Sugar, Zesty Lime and Cooling Soda Water)</small>
+                                        </span> 
+                                        <span class="item-rate">£650.00</span> 
+                                    </li>
+                                    <li class="item"> 
+                                        <span>
+                                            <div class="item-name">2. MARGARITA</div>
+                                            <small class="fst-italic">(Tequila, Orange Liqueur and Lime Juice often served with salt)</small>
+                                        </span> 
+                                        <span class="item-rate">£650.00</span> 
+                                    </li>
+                                    <li class="item"> 
+                                        <span>
+                                            <div class="item-name">3. COSMOPOLITAN</div>
+                                            <small class="fst-italic">(Vodka Citron, Cranberry Juice, Cointreau and Lime Juice)</small>
+                                        </span> 
+                                        <span class="item-rate">£650.00</span> 
+                                    </li>
+                                    <li class="item"> 
+                                        <span>
+                                            <div class="item-name">4. PINA COLADA</div>
+                                            <small class="fst-italic">(A Trophical Blend of Rich Coconut Cream, White Rum and Tangy Pineapple)</small>
+                                        </span> 
+                                        <span class="item-rate">£650.00</span> 
+                                    </li>
+                                    <li class="item"> 
+                                        <span>
+                                            <div class="item-name">5. SEX ON THE BEACH</div>
+                                            <small class="fst-italic">(Cranberry Juice, Orange Juice, Vodka and Peach Schnapps)</small>
+                                        </span> 
+                                        <span class="item-rate">£650.00</span> 
+                                    </li>
+                                </ol>
+                                <ol> 
+                                    <li class="item"> 
+                                        <span>
+                                            <div class="item-name">6. LONG ISLAND ICED TEA</div>
+                                            <small class="fst-italic">(Gomme Syrup, Lemon Juice, Gin, Tequila, Triple Sec, Vodka, White Rum and a Splash of Cola)</small>
+                                        </span> 
+                                        <span class="item-rate">£650.00</span> 
+                                    </li>
+                                    <li class="item"> 
+                                        <span>
+                                            <div class="item-name">7. CALIFORNICATION</div>
+                                            <small class="fst-italic">(Vodka, Gin, White Rum, Tequila, Lemon Juice, Orange Juice and One Sliced Orange)</small>
+                                        </span> 
+                                        <span class="item-rate">£650.00</span> 
+                                    </li>
+                                    <li class="item"> 
+                                        <span>
+                                            <div class="item-name">8. CINDERELLA</div>
+                                            <small class="fst-italic">(Lemon Juice, Orange Juice, Pineapple Juice, Ginger Ale, a Dash of Grenadine Syrup, Pineapple and Orange Slices)</small>
+                                        </span> 
+                                        <span class="item-rate">£650.00</span> 
+                                    </li>
+                                    <li class="item"> 
+                                        <span>
+                                            <div class="item-name">9. SANGRIA</div>
+                                            <small class="fst-italic">(Red Wine, Spanish Brandy, Sparkling Water, Orange Liqueur, Cinnamon and Chopped Fruit)</small>
+                                        </span> 
+                                        <span class="item-rate">£7.50</span> 
+                                    </li>
+                                    <li class="item"> 
+                                        <span>
+                                            <div class="item-name">10. MAAPU VACHITANDA AAPPU</div>
+                                            <small class="fst-italic">(Tequila, Rum, Vodka, Green Chilli, Lime, Ginger and Tender Coconut)</small>
+                                        </span> 
+                                        <span class="item-rate">£650.00</span> 
+                                    </li>
+                                    <li class="item"> 
+                                        <span class="item-name">11. VIRGIN COLADA / VIRGIN MOJITO</span> 
+                                        <span class="item-rate">£4.50</span> 
+                                    </li>
+                                </ol>
+                            </div>
+                            <h3 class="text-center p-3 menu-head">WINE</h3>
+                            <div class="item-list"> 
+                                <ol> 
+                                    <li class="item"> 
+                                        <span>
+                                            <div class="item-name">1. WINE BOTTLE</div>
+                                            <small class="fst-italic">(Chardonnay / Sauvignon Blanc / Pinot Grigio / Merlot)</small>
+                                        </span> 
+                                        <span class="item-rate">£22.00</span> 
+                                    </li>
+                                </ol>
+                                <ol> 
+                                    <li class="item"> 
+                                        <span>
+                                            <div class="item-name">2. WINE GLASS</div>
+                                            <span>125ml - £5.00 250ml</span>    
+                                        </span> 
+                                        <span class="item-rate">£7.50</span> 
+                                    </li>
+                                </ol>
+                            </div>
+                            <div class="item-list"> 
+                                
+                                <ol> 
+                                    <h3 class="text-start p-3 menu-head">CHAMPAGNE AND SPARKLING</h3>
+                                    <li class="item"> 
+                                        <span class="item-name">1. Cava / Prsecco</span> 
+                                        <span class="item-rate">£20.00</span> 
+                                    </li>
+                                    <li class="item"> 
+                                        <span class="item-name">2. Champagne</span> 
+                                        <span class="item-rate">£45.00</span> 
+                                    </li>
+                                </ol>
+                                
+                                <ol> 
+                                    <h3 class="text-start p-3 menu-head">SHARING JUGS</h3>
+                                
+                                    <li class="item"> 
+                                        <span class="item-name">1. Sangria</span> 
+                                        <span class="item-rate">£20.00</span> 
+                                    </li>
+                                    <li class="item"> 
+                                        <span class="item-name">2. Cocktail</span> 
+                                        <span class="item-rate">£20.00</span> 
+                                    </li>
+                                    <li class="item"> 
+                                        <span class="item-name">3. Lassi</span> 
+                                        <span class="item-rate">£15.00</span> 
+                                    </li> 
+                                </ol>
+                                
+                            </div>
+                            <h3 class="text-center p-3 menu-head">MACHAAN ORU QUARTER SOLLEN!</h3>
+                            <div class="item-list"> 
+                                <ol> 
+                                    <h3 class="text-start p-3 menu-head">SPIRIT</h3>
+                                    <li class="item"> 
+                                        <span class="item-name">1. House Sprit Single</span> 
+                                        <span class="item-rate">£3.50</span> 
+                                    </li>
+                                    <li class="item"> 
+                                        <span class="item-name">2. House Sprit Double</span> 
+                                        <span class="item-rate">£7.50</span> 
+                                    </li>
+                                </ol>
+                                
+                                <ol> 
+                                    <h3 class="text-start p-3 menu-head">BEER</h3>
+                                
+                                    <li class="item"> 
+                                        <span class="item-name">1. Small Bottle of Beer</span> 
+                                        <span class="item-rate">£4.00</span> 
+                                    </li>
+                                    <li class="item"> 
+                                        <span class="item-name">2. Bottle of Beer</span> 
+                                        <span class="item-rate">£6.00</span> 
+                                    </li>
+                                    <li class="item"> 
+                                        <span class="item-name">3. Lion Lager</span> 
+                                        <span class="item-rate">£8.00</span> 
+                                    </li>
+                                    <li class="item"> 
+                                        <span class="item-name">4. Lion Stout</span> 
+                                        <span class="item-rate">£9.00</span> 
+                                    </li> 
+                                </ol>
+                                
+                            </div>
+                            <div class="item-list"> 
+                                <ol> 
+                                    <h3 class="text-start p-3 menu-head">Soft Drinks</h3>
+                                    <li class="item"> 
+                                        <span>
+                                            <div class="item-name">1. Coke / Fanta / Sprite / Lemonade</div>
+                                            <small class="fst-italic">(1.5 Liters - £6.00)</small>
+                                        </span> 
+                                        <span class="item-rate">£3.00</span> 
+                                    </li>
+                                    <li class="item"> 
+                                        <span class="item-name">2. Orange / Apple/ Pineapple / Cranberry / Mango / LimeJuice </span> 
+                                        <span class="item-rate">£2.50</span> 
+                                    </li>
+                                    <li class="item"> 
+                                        <span class="item-name">3. SpicyLime </span> 
+                                        <span class="item-rate">£3.00</span>
+                                    </li>
+                                    <li class="item"> 
+                                        <span class="item-name">4. Necto / Orange Barley / Ginger Beer / NeliCrush / Red Bull / Lemon Soda / Rose Milk</span> 
+                                        <span class="item-rate">£3.00</span> 
+                                    </li>
+                                    <li class="item"> 
+                                        <span class="item-name">5. Milk Shake (Chocolate, Vennila, Strawberry, Oreo) / Mango Lassi / Sweet Lassi / Salt Lassi</span> 
+                                        <span class="item-rate">£4.00</span> 
+                                    </li>
+                                    <li class="item"> 
+                                        <span class="item-name">6. Mineral Water / Sparkling Water / Tonic Water / Soda</span> 
+                                        <span class="item-rate">£3.00</span> 
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div id="tab-10" class="tab-content fade show p-0">            
+                            <div class="item-list"> 
+                            
+                                    <ol>
+                                        <h3 class="text-start p-3 menu-head">Jaffna Specials</h3>
+                                        <li class="item"> 
+                                            <span>
+                                                <div class="item-name">1. DUM BIRIYANI</div>
+                                                <small class="fst-italic">(Cicken/Mutton, Chicken65, Gulab Jamun) (First come first serve basis - 12pm onwards)</small>
+                                            </span> 
+                                            <span class="item-rate">£10.00</span> 
+                                        </li>
+                                        <li class="item"> 
+                                            <span>
+                                                <div class="item-name">2. KIZHI PAROTTA</div>
+                                                <small class="fst-italic">(Parotta, Boiled/Fried Egg with Mutton/Chicken/Beef/Prawn/Panner, Mixed Veg Wrapped in Banana Leaf)</small>
+                                            </span> 
+                                            <span class="item-rate">£12.00</span> 
+                                        </li>
+                                        <li class="item"> 
+                                            <span>
+                                                <div class="item-name">3. Mega Vegetaian Thaali</div>
+                                                <small class="fst-italic">(Rice With 5 Curries, Starter, Sides & Dessert)</small>
+                                            </span> 
+                                            <span class="item-rate">£8.00</span> 
+                                        </li>
+                                        <li class="item"> 
+                                            <span>
+                                                <div class="item-name">4. SATURDAY & SUNDAY - LAMPRAIS</div>
+                                                <small class="fst-italic">(Samba Rice with Lamb curry, Chicken Fry, Fish, Anchovy, Egg, Aubergine, Sambol, Cabbage)</small>
+                                            </span> 
+                                            <span class="item-rate">£12.00</span> 
+                                        </li>
+                                                                    
+                                    </ol>        
+                                    
+                            </div>
+                        </div>
+                        <div id="tab-11" class="tab-content fade show p-0">            
+                            <div class="item-list"> 
+                            
+                                    <ol>
+                                        <h3 class="text-start p-3 menu-head">Every Day Specials</h3>                                         
+                                        <li class="item"> 
+                                            <span>
+                                                <div class="item-name">1. Fish Thaali</div>
+                                                <small class="fst-italic">(Rice, Fish Curry & Veg Curry & Boiled Egg)</small>
+                                            </span> 
+                                            <span class="item-rate">£10.00</span> 
+                                        </li>
+                                        <li class="item"> 
+                                            <span>
+                                                <div class="item-name">2. Mutton/Chicken Thaali</div>
+                                                <small class="fst-italic">(2 Veg Curry With Egg & Rice)</small>
+                                            </span> 
+                                            <span class="item-rate">£10.00</span> 
+                                        </li>
+                                        <li class="item"> 
+                                            <span>
+                                                <div class="item-name">3. Veechu Rotti/Parotta</div>
+                                                <small class="fst-italic">(With Chicken/Mutton Curry)</small>
+                                            </span> 
+                                            <span class="item-rate">£8.00</span> 
+                                        </li>
+                                        <li class="item"> 
+                                            <span>
+                                                <div class="item-name">4. Chapathi</div>
+                                                <small class="fst-italic">(With Chicken/Mutton)</small>
+                                            </span> 
+                                            <span class="item-rate">£8.00</span> 
+                                        </li>
+                                                                    
+                                    </ol>        
+                                    <ol>
+                                        <h3 class="text-start p-3 menu-head">CEYLON KITCHEN</h3>
+                                        <li class="item"> 
+                                            <span class="item-name">1. Appam</span> 
+                                            <span class="item-rate">£3.50</span> 
+                                        </li>
+                                        <li class="item"> 
+                                            <span class="item-name">2. Coconut Milk Appam</span> 
+                                            <span class="item-rate">£4.00</span> 
+                                        </li>                                                                                                     
+                                        <li class="item"> 
+                                            <span class="item-name">3. Egg Appam</span> 
+                                            <span class="item-rate">£4.00</span> 
+                                        </li>
+                                        <li class="item"> 
+                                            <span class="item-name">4. Idly</span> 
+                                            <span class="item-rate">£6.00</span> 
+                                        </li>
+                                        <li class="item"> 
+                                            <span class="item-name">5. Puttu</span> 
+                                            <span class="item-rate">£6.00</span> 
+                                        </li>
+                                        <li class="item"> 
+                                            <span class="item-name">6. Plain Puttu</span> 
+                                            <span class="item-rate">£3.50</span> 
+                                        </li>
+                                        <li class="item"> 
+                                            <span>
+                                                <div class="item-name">7. Stringhopper</div>
+                                                <small class="fst-italic">(9 Stringhopper, Sothy and sambal)</small>
+                                            </span> 
+                                            <span class="item-rate">£7.70</span> 
+                                        </li>
+                                        
+                                    </ol>
+                            </div>
+                        </div>
+                        <div id="tab-12" class="tab-content fade show p-0">            
+                            <div class="item-list"> 
+                                <ol> 
+                                    <li class="item"> 
+                                        <span class="item-name">1. Watalappam</span> 
+                                        <span class="item-rate">£5.00</span> 
+                                    </li>
+                                    <li class="item"> 
+                                        <span class="item-name">2. Ice Cream (Vennila / Chocolate)</span> 
+                                        <span class="item-rate">£5.00</span> 
+                                    </li>
+                                    <li class="item"> 
+                                        <span class="item-name">3. Kulfi (Mango, Pistachio, Malai)</span> 
+                                        <span class="item-rate">£5.00</span> 
+                                    </li>
+                                    <li class="item"> 
+                                        <span class="item-name">4. Oreo Cheesecake</span> 
+                                        <span class="item-rate">£5.00</span> 
+                                    </li>
+                                    <li class="item"> 
+                                        <span class="item-name">5. Falooda</span> 
+                                        <span class="item-rate">£5.00</span> 
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    
+            </div>
+        </div>
+
+        <!-- Menu End -->
+        
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s" id="footer">
+            
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script src="js/footer.js"></script>
+</body>
+
+</html>
