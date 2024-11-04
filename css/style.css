@@ -34,7 +34,10 @@
    }    
    
      
-   
+   .home-img{
+    max-width: 600px;
+    max-height: 440px;
+   }
    .item-list {  
     display: grid;  
     grid-template-columns: repeat(2,1fr); /*4 columns */  
@@ -127,6 +130,12 @@
     }
     .item-name, .item-rate{
         font-size: 1rem;
+    }
+    .home-img{
+        max-width: 100%;
+    }
+    .our-res{
+        padding: 20px 40px;
     }
    }  
 /*** Spinner ***/

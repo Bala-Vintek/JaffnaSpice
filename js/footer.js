@@ -15,7 +15,7 @@ footer.innerHTML = `
                     <div class="col-lg-4 col-md-6">
                         <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4 mt-3">Contact</h4>
                         <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>304 Sutton High Street, SM1 1PQ</p>
-                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+44 0208661877</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+44 02086618777</p>
                         <p class="mb-2"><i class="fa fa-envelope me-3"></i>enquiry@jaffnaspice.co.uk</p>
                         <div class="d-flex pt-2">
                             <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/jaffna_spice_/profilecard/?igsh=MWtqNDI1ZDE5aHBpcw==" target="_blank"><i class="fab fa-instagram"></i></a>
