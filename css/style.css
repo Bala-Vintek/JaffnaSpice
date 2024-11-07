@@ -36,6 +36,7 @@
      
    .home-img{
     max-width: 600px;
+    min-width: 550px;
     max-height: 440px;
    }
    .item-list {  
@@ -120,6 +121,9 @@
         height:200px;
         /* border-radius: 50%; */
     }
+    .our-res{
+        padding: 0 40px;
+    }
    @media (max-width:500px) {  
     .item-list {  
     grid-template-columns: repeat(1,1fr); /*1 column on very small screens */ 
@@ -133,6 +137,7 @@
     }
     .home-img{
         max-width: 100%;
+        min-width: 100%;
     }
     .our-res{
         padding: 20px 40px;
